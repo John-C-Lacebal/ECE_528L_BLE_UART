@@ -27,20 +27,34 @@ Pre-Lab
 
 7.
 
-| Pin  | Mnemonic | Input Pin Primary Function | Output Pin Primary Function |
-|------|----------|----------------------------|-----------------------------|
-| P2.2 |PM_UCA1RXD/PM_UCA1SOMI|eUSCI_A1 UART RXD (direction controlled by eUSCI– Input)
-eUSCI_A1 SPI slave out master in (direction controlled by eUSCI)|eUSCI_A1 UART RXD (direction controlled by eUSCI– Input)
-eUSCI_A1 SPI slave out master in (direction controlled by eUSCI)|
-| P2.3 |PM_UCA1TXD|eUSCI_A1 UART TXD (direction controlled by eUSCI– output)/
-eUSCI_A1 SPI slave in master out (direction controlled by eUSCI)|eUSCI_A1 UART TXD (direction controlled by eUSCI– output)/
-eUSCI_A1 SPI slave in master out (direction controlled by eUSCI)|
-| P3.2 |PM_UCA2RXD|eUSCI_A2 UART RXD (direction controlled by eUSCI– input)/
-eUSCI_A2 SPI slave out master in (direction controlled by eUSCI)|eUSCI_A2 UART RXD (direction controlled by eUSCI– input)/
-eUSCI_A2 SPI slave out master in (direction controlled by eUSCI)|
-| P3.3 |PM_UCA2TXD|eUSCI_A2 UART TXD (direction controlled by eUSCI– output)/
-eUSCI_A2 SPI slave in master out (direction controlled by eUSCI)|eUSCI_A2 UART TXD (direction controlled by eUSCI– output)/
-eUSCI_A2 SPI slave in master out (direction controlled by eUSCI)|
+<table>
+  <tr>
+    <th>Pin</th>
+    <th>Mnemonic</th>
+    <th>Input Pin Primary Function</th>
+    <th>Output Pin Primary Function</th>
+  </tr>
+  <tr>
+    <td>P2.2</td>
+    <td>PM_UCA1RXD / PM_UCA1SOMI</td>
+    <td colspan="2">eUSCI_A1 UART RXD (direction controlled by eUSCI – input) / eUSCI_A1 SPI slave out master in (direction controlled by eUSCI)</td>
+  </tr>
+  <tr>
+    <td>P2.3</td>
+    <td>PM_UCA1TXD / PM_UCA1SIMO</td>
+    <td colspan="2">eUSCI_A1 UART TXD (direction controlled by eUSCI – output) / eUSCI_A1 SPI slave in master out (direction controlled by eUSCI)</td>
+  </tr>
+  <tr>
+    <td>P3.2</td>
+    <td>PM_UCA2RXD / PM_UCA2SOMI</td>
+    <td colspan="2">eUSCI_A2 UART RXD (direction controlled by eUSCI – input) / eUSCI_A2 SPI slave out master in (direction controlled by eUSCI)</td>
+  </tr>
+  <tr>
+    <td>P3.3</td>
+    <td>PM_UCA2TXD / PM_UCA2SIMO</td>
+    <td colspan="2">eUSCI_A2 UART TXD (direction controlled by eUSCI – output) / eUSCI_A2 SPI slave in master out (direction controlled by eUSCI)</td>
+  </tr>
+</table>
 
 8.
 ````c
