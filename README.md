@@ -29,13 +29,18 @@ Pre-Lab
 
 | Pin  | Mnemonic | Input Pin Primary Function | Output Pin Primary Function |
 |------|----------|----------------------------|-----------------------------|
-| P2.2 |PM_UCA1RXD PM_UCA1SOMI       |                            |                             |
-| P2.3 |PM_UCA1TXD/
-PM_UCA1SIMO       |                            |                             |
-| P3.2 |PM_UCA2RXD/
-PM_UCA2SOMI       |                            |                             |
-| P3.3 |PM_UCA2TXD/
-PM_UCA2SIMO       |                            |                             |
+| P2.2 |PM_UCA1RXD/PM_UCA1SOMI|eUSCI_A1 UART RXD (direction controlled by eUSCI– Input)
+eUSCI_A1 SPI slave out master in (direction controlled by eUSCI)|eUSCI_A1 UART RXD (direction controlled by eUSCI– Input)
+eUSCI_A1 SPI slave out master in (direction controlled by eUSCI)|
+| P2.3 |PM_UCA1TXD|eUSCI_A1 UART TXD (direction controlled by eUSCI– output)/
+eUSCI_A1 SPI slave in master out (direction controlled by eUSCI)|eUSCI_A1 UART TXD (direction controlled by eUSCI– output)/
+eUSCI_A1 SPI slave in master out (direction controlled by eUSCI)|
+| P3.2 |PM_UCA2RXD|eUSCI_A2 UART RXD (direction controlled by eUSCI– input)/
+eUSCI_A2 SPI slave out master in (direction controlled by eUSCI)|eUSCI_A2 UART RXD (direction controlled by eUSCI– input)/
+eUSCI_A2 SPI slave out master in (direction controlled by eUSCI)|
+| P3.3 |PM_UCA2TXD|eUSCI_A2 UART TXD (direction controlled by eUSCI– output)/
+eUSCI_A2 SPI slave in master out (direction controlled by eUSCI)|eUSCI_A2 UART TXD (direction controlled by eUSCI– output)/
+eUSCI_A2 SPI slave in master out (direction controlled by eUSCI)|
 
 8.
 ````c
