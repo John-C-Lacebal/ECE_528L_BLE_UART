@@ -33,6 +33,15 @@
 #include "msp.h"
 #include "Clock.h"
 
+#define BLE_UART_BUFFER_SIZE 128
+
+#define CR 0x0D
+#define LF 0x0A
+#define BS 0x08
+#define ESC 0x1B
+#define SP 0x20
+#define DEL 0x7F
+
 void BLE_UART_Init();
 
 uint8_t BLE_UART_InChar();
@@ -40,6 +49,8 @@ uint8_t BLE_UART_InChar();
 void BLE_UART_OutChar(uint8_t data);
 
 int BLE_UART_InString(char *buffer_pointer, uint16_t buffer_size);
+
+int BLE_UART_InPacket(char *buffer_pointer);
 
 void BLE_UART_OutString(char *pt);
 
